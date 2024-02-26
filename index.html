@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHRESTHA Pizza</title>
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="">
+    <!-- Navbar -->
+    <header>
+      <a href="#" class="logo">SHRESTHA Pizza</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li id="cart-icon">
+          <a>Cart</a>
+          <div class="notification-container">
+            <p class="notification">0</p>
+          </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- Dark Mode -->
+        <div class="bx bx-moon" id="darkmode"></div>
+      </ul>
+    </header>
+    <!-- Home  Section-->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>SHRESTHA Pizza</h1>
+        <h2>
+          The tasty pizza of <br />
+          your choice
+        </h2>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+      <div class="home-img">
+        <img
+          src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- shopping cart -->
+    <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div class="listCart"></div>
+      <div class="cartBtn">
+        <button class="close" id="closeCart">Close</button>
+        <button class="checkOut">Check Out</button>
+      </div>
+    </div>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img
+          src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__480.jpg"
+          alt=""
+        />
+      </div>
+      <div class="about-text">
+        <span>About Us</span>
+        <h2>
+          We make good and <br />
+          tasty pizzas
+        </h2>
+        <p>
+          At our pizzeria, we're passionate about crafting the finest pizzas
+          that tantalize your taste buds. Each pizza is carefully crafted using
+          the freshest ingredients and cooked to perfection. Whether you're
+          craving a classic Margherita or a loaded Meat Lovers, we have
+          something to satisfy every pizza lover's cravings
+        </p>
+        <a href="#contact" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="popular-pizza" id="menu">
+      <div class="menu-container">
+        <!-- All the product will be added with js from json file -->
+        <!-- one example of how the items elemnt will be added:  -->
+        <div class="box">
+          <div class="box-img">
+            <img
+              src="https://www.moulinex-me.com/medias/?context=bWFzdGVyfHJvb3R8MTQzNTExfGltYWdlL2pwZWd8aGNlL2hmZC8xNTk2ODYyNTc4NjkxMC5qcGd8MmYwYzQ4YTg0MTgzNmVjYTZkMWZkZWZmMDdlMWFlMjRhOGIxMTQ2MTZkNDk4ZDU3ZjlkNDk2MzMzNDA5OWY3OA"
+              alt="Pepperoni Pizza"
+            />
+          </div>
+          <h2>Pepperoni Pizza</h2>
+          <h3>Tasty Food</h3>
+          <span>$30.05</span>
+          <button class="addCart"><i class="bx bx-cart-alt"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="contact-box">
+        <h3>Pizza Pie</h3>
+        <span>Connect With Us</span>
+        <div class="social">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://twitter.com/home" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="contact-box">
+        <h3>Menu Links</h3>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+      <div class="contact-box address">
+        <h3>Contact</h3>
+        <i class="bx bxs-map"><span>44600, Kathmandu, Nepal</span></i>
+        <i class="bx bxs-phone"><span>+977 xxxxxxxxxx</span></i>
+        <i class="bx bxs-envelope"><span>email@gmail.com</span></i>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>© All Right Reserved to Reshma Shrestha.</p>
+    </div>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
